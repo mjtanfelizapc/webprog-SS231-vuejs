@@ -28,6 +28,7 @@
   <food-item2/> <br>
   <comment-form/>
   <comment/>
+  <rest-api/>
 </template>
 
 <style></style>
