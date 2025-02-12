@@ -4,13 +4,13 @@
 
   const countries = ref([])
 
-  async function getcountries() {
+  async function getCountries() {
     const { data } = await supabase.from('countries').select()
     countries.value = data
   }
 
   onMounted(() => {
-    getcountries()
+    getCountries()
   })
   </script>
 
@@ -26,6 +26,8 @@
   <food-item2/> <br>
   <food-item/> <br>
   <food-item2/> <br>
+  <comment-form/>
+  <comment/>
 </template>
 
 <style></style>
